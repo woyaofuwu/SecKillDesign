@@ -23,6 +23,13 @@ public class SecKillController {
     @Autowired
     private SecKillService secKillService;
 
+    
+  @RequestMapping("/h")
+  @ResponseBody
+  public String thymeleaf( ) {
+     
+      return "hello";
+  }
     /**
      * MySQL悲观锁
      * @param requestMessage
